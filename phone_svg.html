@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>phone</title>
+</head>
+<body>
+	<div class="container">
+		<div class="phoneA"></div>
+		<div class="phoneB"></div>
+		<div class="phoneC"></div>
+		<div class="phoneD"></div>
+		<div class="phoneE"></div>
+		<div class="phoneF"></div>
+		<div class="phoneG"></div>
+		<div class="phoneH"></div>
+		<div class="phoneI"></div>
+		<div class="phoneJ">
+			<div class="camera"></div>
+			<div class="screen">
+				<div class="battery">
+					<div class="fill"></div>
+					<p class="percent">25%</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: grey;
+	}
+	.container{
+		transform-style: preserve-3d;
+		position: absolute;
+	}
+	.phoneA{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 150px;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneB{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 149px;
+		border-radius: 20px;
+		border: 3px solid #0c0c0c;
+		box-shadow: -18px 20px 24px black,
+					-18px 20px 24px black;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.camera{
+		width: 7px;
+		height: 7px;
+		background: skyblue;
+		border: 3px solid #000;
+		border-radius: 20px;
+		position: absolute;
+		left: 100px;
+		top: 5px;
+	}
+	.screen{
+		width: 196px;
+		height: 360px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(black, #111);
+		position: absolute;
+		top: 25px;
+		left: 2px;
+	}
+	.battery{
+		width: 70px;
+		height: 150px;
+		position: absolute;
+		background: black;
+		top: 120px;
+		border: #0c0c0c solid 2px;
+		border-radius: 10px;
+	}
+	.fill{
+		width: 70px;
+		height: 10px;
+		background: linear-gradient(green, lime);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		position: absolute;
+		top: 140px;
+		animation: charge 3s infinite 0s;
+	}
+	.percent{
+		font-family: century gothic;
+		font-size: 1.5em;
+		color: #fff;
+		position: absolute;
+		top: 60px;
+		left: 15px;
+	}
+		@keyframes charge{
+			0%{
+				height: 10px;
+				top: 140px;
+			}
+			10%{
+				height: 20px;
+				top: 130px;
+			}
+			20%{
+				height: 30px;
+				top: 120px;
+			}
+			30%{
+				height: 40px;
+				top: 110px;
+			}
+			40%{
+				height: 50px;
+				top: 100px;
+			}
+			50%{
+				height: 60px;
+				top: 90px;
+			}
+			60%{
+				height: 70px;
+				top: 80px;
+			}
+			70%{
+				height: 80px;
+				top: 70px;
+			}
+			80%{
+				height: 90px;
+				top: 60px;
+			}
+			90%{
+				height: 100px;
+				top: 50px;
+			}
+			100%{
+				height: 150px;
+				top: 0px;
+				border-radius:10px;
+			}
+		}
+	.phoneC{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 148px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneD{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 147px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneE{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 146px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneF{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 145px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneG{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 144px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneH{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 143px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneI{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 142px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+	.phoneJ{
+		width: 200px;
+		height: 400px;
+		background: #111;
+		position: absolute;
+		left: 500px;
+		top: 141px;
+		border: 3px solid #0c0c0c;
+		border-radius: 20px;
+		transform-style: preserve-3d;
+		transform: rotateX(60deg) rotate(-45deg);
+	}
+</style>
+</html>
